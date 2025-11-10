@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { YOUTUBE_API_URL } from "../utils/constant";
+import {YOUTUBE_API_URL} from "../utils/constant";
 import VideoCard from "./VideoCard";
 import {Link} from 'react-router-dom'
 
@@ -15,8 +15,7 @@ const VideoContainer = () => {
     try {
       const data = await fetch(YOUTUBE_API_URL);
       const json = await data.json();
-      console.log(json);
-
+     
       if (json.items) {
         setVideos(json.items);
       } else {
