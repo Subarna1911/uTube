@@ -2,8 +2,6 @@ import React from 'react';
 import { House, BellRing, BugPlay, AlignVerticalJustifyStart } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
-
-
 const SideIcons = () => {
   return (
     <div className="w-full bg-slate-100 py-3 md:py-8 px-6 md:px-8 h-full border-r border-slate-400">

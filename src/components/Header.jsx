@@ -2,15 +2,16 @@ import React from 'react'
 import logo from '../assets/YtLogo.png'
 import {Menu, Search, User} from 'lucide-react'
 import  {useDispatch} from 'react-redux'
+import { useState, useEffect } from 'react'
 import { toggleMenu } from '../app/navSlice'
 import {Link} from 'react-router-dom'
 
 const Header = () => {
 
+  const [query, setQuery] = useState("");
   const dispatch = useDispatch();
-
+  
   const handleClick = ()=>{
-   
     dispatch(toggleMenu());
   }
   
@@ -24,7 +25,7 @@ const Header = () => {
           </div>
 
           <div className='relative flex items-center'>
-            <input className='md:w-xl sm:w-sm w-80 border border-gray-200 rounded-full py-2 px-3 outline-none' type="text" placeholder='search' />
+            <input className='md:w-xl sm:w-sm w-80 border border-gray-200 rounded-full py-2 px-3 outline-none' value={query} onChange={(e)=>setQuery(e.target.value)} type="text" placeholder='search' />
             <div className='absolute right-1 bg-gray-900 py-2  px-3 text-white rounded-r-full hover:cursor-pointer'>
                  <Search size={20}/>
             </div>
@@ -34,9 +35,6 @@ const Header = () => {
           <div>
             <User size={20}/>
           </div>
-
-
-
         </div>
         
       </div>

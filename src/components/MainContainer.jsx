@@ -14,12 +14,12 @@ const MainContainer = () => {
     <div>
        <VideoContainer/>
     </div>
-    </div>
    
-
+    </div>
+  
     </>
-    
+
   )
-}
+};
 
 export default MainContainer
