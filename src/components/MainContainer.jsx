@@ -12,6 +12,7 @@ const MainContainer = () => {
       <div>
         <VideoContainer />
       </div>
+    
     </div>
   )
 }

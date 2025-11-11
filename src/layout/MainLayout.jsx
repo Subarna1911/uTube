@@ -28,14 +28,13 @@ const MainLayout = () => {
             <div className="container mx-auto">
                 <main className="grid grid-cols-12 ">
                   {showSideIcons &&
-                <div className="col-span-2 pt-16">
+                <div className="col-span-2">
                     <SideIcons/>
                 </div>
               }
             <div className={ showSideIcons ? "col-span-10" : "col-span-12"}>
                 <Outlet />
             </div>
-            
                 </main>
            </div>
         </div>

@@ -76,11 +76,11 @@ const Header = () => {
 
           {/* Suggestions */}
           {showSuggestions && suggestions && suggestions.length > 0 && (
-            <ul className="absolute left-0 w-full bg-white border border-gray-200 rounded-lg shadow-lg mt-2 max-h-64 overflow-y-auto z-50 list-none">
+            <ul className="absolute left-0 w-full bg-slate-100 border border-gray-200 rounded-lg shadow-lg mt-2 max-h-64 overflow-y-auto z-50 list-none">
               {suggestions.map((suggestion, index) => (
                 <li
                   key={index}
-                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex justify-between items-center"
+                  className="px-4 py-2 hover:bg-white cursor-pointer flex justify-between items-center"
                   onMouseDown={() => setSearchQuery(suggestion)}
                 >
                   {suggestion}

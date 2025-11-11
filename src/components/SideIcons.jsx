@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 
 const SideIcons = () => {
   return (
-    <div className="w-full bg-slate-100 py-3 md:py-8 px-6 md:px-8 h-full border-r border-slate-400">
+    <div className="w-full min-h-screen bg-slate-100 py-3 md:py-8 px-6 md:px-8 h-full border-r border-slate-400">
       <div className="flex flex-col space-y-8">
       
-        <ul className="space-y-8 list-none">
+        <ul className="space-y-8 list-none pt-16">
           <li>
             <NavLink
               to="/"
