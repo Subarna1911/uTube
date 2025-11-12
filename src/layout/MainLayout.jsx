@@ -38,8 +38,6 @@ const MainLayout = () => {
                 </main>
            </div>
         </div>
-       
-        
       </div>
       <Footer />
     </div>

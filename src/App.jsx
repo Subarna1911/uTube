@@ -1,11 +1,11 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import store from "./app/appStore";
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
 import Watch from "./pages/Watch";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import SearchResults  from "./components/SearchResults";
 
 const appRouter = createBrowserRouter([
   {
@@ -22,6 +22,11 @@ const appRouter = createBrowserRouter([
       path:"/watch",
       element:<Watch/>
     },
+
+     { path: "search", 
+      element: <SearchResults /> 
+    } ,
+
   ],
 },
 

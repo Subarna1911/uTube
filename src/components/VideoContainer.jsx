@@ -30,7 +30,7 @@ const VideoContainer = () => {
 
 
   return (
-    <div className="max-w-screen h-screen px-6 md:px-8 py-5">
+    <div className="max-w-screen px-6 md:px-8 py-5">
       <div className="grid md:grid-cols-4 grid-cols-2 justify-center gap-5 items-center space-y-5 ">
           {videos.length > 0 ? (
         videos.map((video) => (
