@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import {YOUTUBE_API_URL} from "../utils/constant";
 import VideoCard from "./VideoCard";
 import {Link} from 'react-router-dom'
+import videoData from '../utils/mockData';
 
 const VideoContainer = () => {
   const [videos, setVideos] = useState([]);
-
+  
   useEffect(() => {
     getData();
   }, []);
@@ -19,14 +20,17 @@ const VideoContainer = () => {
         setVideos(json.items);
       } else {
         console.log("No items found", json);
+        setVideos(videoData);
       }
     } catch (error) {
       console.log("Error fetching data from server", error);
+         setVideos(videoData);
     }
   };
 
+
   return (
-    <div className="max-w-screen px-6 md:px-8 py-5">
+    <div className="max-w-screen h-screen px-6 md:px-8 py-5">
       <div className="grid md:grid-cols-4 grid-cols-2 justify-center gap-5 items-center space-y-5 ">
           {videos.length > 0 ? (
         videos.map((video) => (
