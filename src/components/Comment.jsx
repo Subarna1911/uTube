@@ -62,7 +62,7 @@ const Comment = () => {
               text: "Ahh got it now. Thanks, Kavya! 🙌",
               replies: [
                 {
-              id: 5,
+              id: 10,
               name: "Rohan Patel",
               text: "Ahh got it now. Thanks, Kavya! 🙌",
               replies: [],
@@ -89,7 +89,12 @@ const Comment = () => {
       id: 8,
       name: "Rahul Das",
       text: "Could you please make a follow-up video on optimization techniques?",
+      replies: [ {
+      id: 9,
+      name: "Rahul Das",
+      text: "Could you please make a follow-up video on optimization techniques?",
       replies: [],
+    },],
     },
   ];
 
