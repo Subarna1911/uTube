@@ -29,7 +29,6 @@ if(!info || !info.snippet || !info.statistics) return null;
         <p className='text-sm'>{commentCount}</p>
        </div>
        </div>
-  
       </div>
     </div>
   )

@@ -13,9 +13,8 @@ const Header = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
+  
   const searchCache = useSelector((store) => store.search);
-
   useEffect(() => {
     if (!searchQuery) {
       setSuggestions([]);
@@ -31,7 +30,6 @@ const Header = () => {
         getSearchData(normalizedQuery);
       }
     }, 200);
-
     return () => clearTimeout(timer);
   }, [searchQuery, searchCache]);
 
